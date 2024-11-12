@@ -1,0 +1,902 @@
+:root{
+    --primary-color:   rgb(0, 0, 0);
+    --paragraph-color: rgb(116, 129, 130);
+    --header-color:    rgb(255, 255, 255);
+    --background-color:rgb(247, 247, 247);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px; 
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 80%;
+    padding: 0;
+}
+
+/************ navbar ************/
+/************ navbar ************/
+#navbar-example2{
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+    padding: 0;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 99999; 
+    position: absolute;
+    top:30px;
+}
+.navbar .header{
+    z-index: 1;
+}
+.navbar .header .navbar-brand{
+    text-transform: uppercase;
+    color: var(--header-color);
+    font-weight: 800;
+    padding: 0;
+}
+.nav-pills .nav-link{
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--header-color);
+}
+.toggel{display: none;}
+.navbar-links .nav-pills .nav-link.active{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0;
+}
+/************ home ************/
+/************ home ************/
+#home{
+    background-image: url(./imgs/bg.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.cover{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cover .container .content{
+    width: 100%;
+    text-align: center;
+    color: var(--header-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#home .content h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+
+}
+#home .content p{
+    font-size: 60px;
+    font-weight: 100;
+}
+.social_icons{
+    width: fit-content;
+    margin: auto;
+}
+.cover .container .content .social_icons a{
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: var(--header-color);
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+/************text-animation***********/
+/************text-animation***********/
+.text-animation{
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    position: relative;
+}
+.text-animation::before{
+    content: "";
+    height: 15px;
+    align-content: center;
+    align-items: center;
+    padding-right: 8px;
+    border-right: 3px solid var(--header-color);
+    animation: words 10s infinite;
+}
+  
+@keyframes words{
+    0%{content: "D";}
+    1%{content: "De";}
+    2%{content: "Des";}
+    3%{content: "Desi";}
+    4%{content: "Desig";}
+    5%{content: "Design";}
+    6%{content: "Designe";}
+    7%,21%{content: "Designer";}
+    22%{content: "Designe";}
+    23%{content: "Design";}
+    24%{content: "Desig";}
+    25%{content: "Desi";}
+    26%{content: "Des";}
+    27%{content: "De";}
+    28%{content: "D";}
+    29%{content: "";}  
+
+    30%{content: "L";}
+    31%{content: "La";}
+    32%{content: "Lar";}
+    33%{content: "Larr";}
+    34%{content: "Larry";}
+    35%{content: "Larry ";}
+    36%{content: "Larry D";}
+    37%{content: "Larry Da";}
+    38%{content: "Larry Dan";}
+    39%{content: "Larry Dani";}
+    40%{content: "Larry Danie";}
+    41%{content: "Larry Daniel";}
+    42%,56%{content: "Larry Daniels";}
+    57%{content: "Larry Daniel";}
+    58%{content: "Larry Danie";}
+    59%{content: "Larry Dani";}
+    60%{content: "Larry Dan";}
+    61%{content: "Larry Da";}
+    62%{content: "Larry D";}
+    63%{content: "Larry ";}
+    64%{content: "Larry";}
+    65%{content: "Larr";}
+    66%{content: "Lar";}
+    67%{content: "La";}
+    68%{content: "L";}
+    69%{content: "";}
+
+    70%{content: "D";}
+    71%{content: "De";}
+    72%{content: "Dev";}
+    73%{content: "Deve";}
+    74%{content: "Devel";}
+    75%{content: "Develo";}
+    76%{content: "Develop";}
+    77%{content: "Develope";}
+    78%,92%{content: "Developer";}
+    93%{content: "Develope";}
+    94%{content: "Develop";}
+    95%{content: "Develo";}
+    96%{content: "Devel";}
+    97%{content: "Deve";}
+    98%{content: "Dev";}
+    99%{content: "De";}
+    100%{content: "D";}
+    /* 79%{content: "";} */
+}
+
+/************ about ************/
+/************ about ************/
+#about{
+    padding: 130px 0;
+}
+#about .container{
+    padding-left: 30px;
+}
+#about .about_img{
+    position: relative;
+    width: 100%;
+}
+.heroImg{
+    width: 95%;
+    z-index: 1;
+}
+#about .about_img .back_dots{
+    background-image: url(./imgs/dots.png);
+    height: 75%;
+    width: 80%;
+    position: absolute;
+    bottom: -27px;
+    left: -30px;
+    z-index: -10;
+}
+
+#about .content h3{
+    color: var(--primary-color);
+    font-family: "montserrat", sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+#about .content_span{
+    color: var(--paragraph-color);
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 0;
+    font-size: 14px;
+}
+
+#about .content p{
+    color: var(--paragraph-color);
+    margin: 20px 0;
+}
+#about .content p span{
+    letter-spacing: 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* skill-bar */
+.skill_bar .progress{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2) inset;
+    height: 25px;
+}
+
+.skill_bar .progress .progress-bar{
+    background-color: var(--primary-color);
+    color: var(--header-color);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 10px;
+    height: 100%;
+    width: 120px;
+    border-radius: 5px;
+    position: relative;
+    animation: move 1.8s ease forwards;
+}
+
+@keyframes move {
+    to{
+        width: 100%;
+    }
+}
+.skill_bar .progress .progress-bar .defult{
+    color: var(--header-color);
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+.skill_bar .progress .progress-bar .defult h6{
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+    color: #fff;
+}
+.btn{
+    border: 1px solid var(--primary-color);
+    padding: 8px 25px;
+}
+    
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover{
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-secondary{
+    background-color: var(--header-color);
+    color: var(--primary-color);
+}
+.btn-secondary:hover{
+    background-color: var(--primary-color);
+    color: var(--header-color);
+}
+/*************************** services ***************************/
+/*************************** services ***************************/
+#services{
+    background-color: var(--background-color);
+    padding: 130px 0;
+    text-align: center;
+}
+
+.head{
+    background-image: url(./imgs/dots.png);
+    width: fit-content;
+    height: 40px;
+    margin: 0 auto 60px;
+
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    top: -20px;
+}
+
+.box{
+    text-align: center;
+    background-color: var(--header-color);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+}
+.box h2{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.box p{
+    color: var(--paragraph-color);
+}
+.box_icon i{
+    background-color: var(--background-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 28px;
+    text-align: center;
+    align-content: center;
+    transition: all ease-in-out .5s;
+}
+
+.box:hover .box_icon i{
+    background-color: var(--primary-color);
+    color: var(--header-color);
+}
+
+/*************************** work ***************************/
+/*************************** work ***************************/
+#works{
+    padding: 130px 0;
+}
+#works .btn-center{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto 20px;
+}
+#works .btn-filter{
+    border: 3px solid transparent;
+    background-color: var(--header-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+#works .btn-center .selected{
+    border: none;
+    border-bottom: 3px solid var(--primary-color);
+}
+.img{
+    margin-top: 20px;
+    display: none;
+}
+.figure{
+    height: 100%;
+    position: relative;
+}
+
+.figure-img, .img-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+.figure-caption{
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    transition: all ease-in-out .4s;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.figure:hover .figure-caption{
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    align-content: space-between;
+    justify-content: space-between;
+    transition: all ease-in-out .5s;
+}
+
+.center p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.center ul.list-unstyled{
+    margin: 0 auto;
+    gap: 5px;
+}
+.center ul.list-unstyled i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--header-color);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+}
+.center ul.list-unstyled i:hover{
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.figure:hover .center{
+    height: 60px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/*********** modal ***********/
+.modal-content{
+    position: relative;
+}
+.btn-close{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    color: var(--header-color);
+    border: none;
+}
+.modal-body{
+    height: fit-content;
+    padding: 50px;
+}
+.modal .carousel-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.carousel-control-prev{
+    position: absolute;
+    left: -100px;
+}
+.carousel-control-next{
+    position: absolute;
+    right: -100px;
+}
+.left-arrow i{
+    color: var(--primary-color);
+    font-size: 34px;
+    transform: rotate(-90deg);
+}
+.right-arrow i{
+    color: var(--primary-color);
+    font-size: 34px;
+    transform: rotate(90deg);
+}
+/*************************** clients ***************************/
+/*************************** clients ***************************/
+#clients{
+    padding: 130px 0;
+    background-color: var(--background-color);
+}
+
+.carousel-inner .carousel-item{
+    color: var(--paragraph-color);
+}
+.carousel-img{
+    width: fit-content;
+    margin: auto;
+}
+.carousel-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.carousel-inner .carousel-item .caption {
+    padding: 0;
+    margin: 15px auto 0;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+}
+
+.caption h6{
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 600;
+    margin: 30px 0 0;
+}
+.caption span{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: var(--paragraph-color);
+}
+
+.carousel-indicators .btn-circle{
+    background-color: var(--background-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+/*************************** numbers ***************************/
+/*************************** numbers ***************************/
+.team_numbers{
+    padding: 130px 0;
+}
+.team_numbers .team_item{
+    text-align: center;
+}
+.team_numbers .team_item i{
+    color: var(--primary-color);
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.team_numbers .team_item h3{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 53px;
+    color: var(--primary-color);
+}
+
+.team_numbers .team_item p{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--paragraph-color);
+}
+/*************************** team ***************************/
+/*************************** team ***************************/
+#team{
+    padding: 130px 0;
+    background-color: var(--background-color);
+}
+.team_img{
+    position: relative;
+    overflow: hidden;
+}
+.team_img img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform .5s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.team_img .team_icons{
+    background-color: var(--header-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    transform: rotateY(180deg);
+    transition: all ease-in-out .4s;
+    opacity: 0;
+}
+.team_img .team_icons i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    color: var(--header-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+} 
+.team_img .team_icons i:hover{
+    background-color: var(--header-color);
+    color: var(--primary-color);
+}
+.team_caption{
+    background-color: gray;
+    text-align: center;
+    color: var(--header-color);
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px 0;
+}
+
+.team_caption p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.team_caption h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.team_img:hover img{
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+    overflow: hidden;
+}
+.team_img:hover .team_icons{
+    opacity: .97;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    transform: rotateY(360deg);
+}
+
+#team:has(#caption1:hover) #icons1,
+#team:has(#caption2:hover) #icons2,
+#team:has(#caption3:hover) #icons3{
+    opacity: .97;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    transform: rotateY(360deg);
+}
+
+/*************************** contact ***************************/
+/*************************** contact ***************************/
+#contact{
+    padding: 130px 0;
+}
+.row-center{
+    width: 80%;
+    margin: auto;
+}
+#contact .item{
+    text-align: center;
+}
+
+#contact .item i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: all ease-in-out .3s;
+}
+
+#contact .item:hover i{
+    background-color: var(--primary-color);
+    color: var(--header-color);
+}
+
+#contact .item h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+#contact .item p{
+    color: var(--paragraph-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/***** form *****/
+#contact-form{
+    width: 80%;
+    margin: auto;
+}
+#inputName, #inputEmail, #inputMessage{
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#inputName:focus, #inputEmail:focus, #inputMessage:focus{
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+#inputSubmit{
+    background-color: var(--primary-color);
+    color: var(--header-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 7px 35px;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+}
+#inputSubmit:hover{
+    cursor: pointer;
+    background-color: var(--header-color);
+    color: var(--primary-color);
+}
+
+footer{
+    color: var(--paragraph-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+footer .container{
+    padding: 20px;
+}
+
+
+
+/************************ @media screen ************************/
+/************************ @media screen ************************/
+
+@media screen and (max-width: 870px) {
+    .container{
+        min-width: 95%;
+        padding: 0;
+    }
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* responsive navbar */
+    .navbar{
+        position: relative;
+    }
+    .navbar-links{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        transition: all ease-in-out .4s;
+        z-index: 0;
+    }
+    .responsive{
+        background-color: var(--header-color);
+        border-top: 1px solid var(--paragraph-color);
+        height: 480px;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    /* responsive navbar */
+
+    .navbar-links .nav-pills{
+        background-color: var(--header-color);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;  
+    }
+
+    .nav-link{
+        width: fit-content;
+        margin: auto;
+    }
+    .toggel{
+        display: block;
+        z-index: 1;
+    }
+    .toggel .btn-primary{
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: var(--header-color);
+        font-size: 24px;
+    }
+
+    #home .content p{
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    #about .container{
+        padding-left: 0px;
+    }
+    #about .about_img img{
+        width: 100%;
+    }
+    #about .row{
+        width: 100%;
+        margin: 0;
+    }
+    #about .row .col-md-5{
+        min-width: 100%;
+        margin-bottom: 70px;
+        padding: 0;
+        padding-left: 30px;
+    }
+    #about .row .col-md-7{
+        padding: 0;
+        min-width: 100%;
+    }
+    .figure{width: 100%;}
+    .col-md-4{
+        padding: 0;
+    }
+
+    .team_numbers .row{
+        gap: 30px;
+    }
+
+    #contact .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .row .col-md-6, #contact .row .col-md-12{
+        padding: 0;
+    }
+    #contact-form{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .col-md-2{
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .container{
+        min-width: 90%;
+        padding: 0 15px;
+    }
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    #home .content p{
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    #about .container{
+        padding-left: 15px;
+    }
+}
