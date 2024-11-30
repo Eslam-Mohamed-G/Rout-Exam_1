@@ -466,43 +466,31 @@
     display: block;
 }
 
-/*********** modal ***********/
-.modal-content{
+.show-container{
+    background-color: rgb(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+.show-container .content{
+    width: fit-content;
+    margin: auto;
     position: relative;
 }
-.btn-close{
+.show-container .btn-close{
+    color: black;
     position: absolute;
     top: -30px;
-    right: 0px;
-    color: var(--header-color);
-    border: none;
+    right: 22px;
 }
-.modal-body{
-    height: fit-content;
-    padding: 50px;
-}
-.modal .carousel-item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-.carousel-control-prev{
-    position: absolute;
-    left: -100px;
-}
-.carousel-control-next{
-    position: absolute;
-    right: -100px;
-}
-.left-arrow i{
-    color: var(--primary-color);
+.show-container i{
     font-size: 34px;
-    transform: rotate(-90deg);
-}
-.right-arrow i{
-    color: var(--primary-color);
-    font-size: 34px;
-    transform: rotate(90deg);
+    cursor: pointer;
 }
 /*************************** clients ***************************/
 /*************************** clients ***************************/
