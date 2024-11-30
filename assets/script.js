@@ -96,6 +96,20 @@ function prev(){
     }
 }
 prevIcon.addEventListener("click", prev)
+document.body.addEventListener("keydown", function(e){
+
+  switch (e.code) {
+      case "ArrowRight":
+          next();
+          break;
+      case "ArrowLeft":
+          prev();
+          break;
+      case "Escape":
+          close();
+          break;
+  }
+})
 
 
 
