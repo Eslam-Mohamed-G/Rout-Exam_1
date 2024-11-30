@@ -2,7 +2,7 @@
 
 ## Project Demo
 
-![Watch the video](./Record.mp4)
+![Watch the video](Record.mp4)
 
 <p align="center">
   <kbd>
