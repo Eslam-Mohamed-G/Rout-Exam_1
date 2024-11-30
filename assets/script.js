@@ -33,7 +33,14 @@ function myFunction() {
   }
 }
 
+var img = document.querySelectorAll(".img-fluid");
+var search = document.querySelectorAll(".fa-magnifying-glass-plus")
+var show = document.querySelector(".show-container");
+var imgShow = document.querySelector(".img-show")
+var nextIcon = document.querySelector(".fa-angle-right");
+var prevIcon = document.querySelector(".fa-angle-left")
 
+var btnClose = document.querySelector(".btn-close")
 
 
 
