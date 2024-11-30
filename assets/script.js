@@ -60,6 +60,17 @@ for(let i=0; i<search.length; i++){
         // console.log(i)
     });
 }
+function close(){
+  show.classList.replace("d-block","d-none")
+}
+btnClose.addEventListener("click", close)
+
+show.addEventListener("click", function(e){
+  if(e.target ==show){
+      close()
+  }
+})
+
 
 
 
