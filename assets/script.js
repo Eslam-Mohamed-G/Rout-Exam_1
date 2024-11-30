@@ -76,10 +76,11 @@ function next(){
     imgIndex++;
     let imgSrc = imgArry[imgIndex]
     if(imgIndex <= imgArry.length-1){
-        imgShow.setAttribute("src", imgSrc)
-        prevIcon.classList.remove("d-none");
+      imgShow.setAttribute("src", imgSrc)
+      prevIcon.classList.remove("d-none");
     }else {
-        nextIcon.classList.add("d-none")
+      nextIcon.classList.add("d-none")
+      imgIndex=imgArry.length-1;
     }
 }
 
@@ -89,6 +90,7 @@ function prev(){
     imgIndex--;
     let imgSrc = imgArry[imgIndex];
     if(imgIndex < 0){
+      imgIndex = 0;
         prevIcon.classList.add("d-none");
     }else{
         imgShow.setAttribute("src", imgSrc);
