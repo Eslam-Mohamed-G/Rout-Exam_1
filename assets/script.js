@@ -70,6 +70,32 @@ show.addEventListener("click", function(e){
       close()
   }
 })
+imgIndex = 0;
+
+function next(){
+    imgIndex++;
+    let imgSrc = imgArry[imgIndex]
+    if(imgIndex <= imgArry.length-1){
+        imgShow.setAttribute("src", imgSrc)
+        prevIcon.classList.remove("d-none");
+    }else {
+        nextIcon.classList.add("d-none")
+    }
+}
+
+nextIcon.addEventListener("click", next)
+
+function prev(){
+    imgIndex--;
+    let imgSrc = imgArry[imgIndex];
+    if(imgIndex < 0){
+        prevIcon.classList.add("d-none");
+    }else{
+        imgShow.setAttribute("src", imgSrc);
+        nextIcon.classList.remove("d-none");
+    }
+}
+prevIcon.addEventListener("click", prev)
 
 
 
