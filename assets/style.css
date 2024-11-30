@@ -55,7 +55,7 @@
 /************ home ************/
 /************ home ************/
 #home{
-    background-image: url(./imgs/bg.jpg);
+    background-image: url(../imgs/bg.jpg);
     background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
