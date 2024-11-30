@@ -1,9 +1,5 @@
 <h1 align="center">Exam_1</h1>
 
-## Project Demo
-
-![Watch the video](Record.mp4)
-
 <p align="center">
   <kbd>
     <img src="./imgs/preview_1.png"></img>
