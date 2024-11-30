@@ -32,7 +32,7 @@ function myFunction() {
     x.className = "navbar-links";
   }
 }
-
+//  show-conetainr of section work
 var img = document.querySelectorAll(".img-fluid");
 var search = document.querySelectorAll(".fa-magnifying-glass-plus")
 var show = document.querySelector(".show-container");
@@ -41,7 +41,25 @@ var nextIcon = document.querySelector(".fa-angle-right");
 var prevIcon = document.querySelector(".fa-angle-left")
 
 var btnClose = document.querySelector(".btn-close")
+var imgArry = [];
+for(let i=0; i<img.length; i++){
+    let src = img[i].getAttribute('src');
+    imgArry.push(src)
+}
 
+// console.log(imgArry)
+for(let i=0; i<search.length; i++){
+    search[i].addEventListener('click', function(e){
+        imgIndex = i;
+        let imgSrc = imgArry[i]
+        imgShow.setAttribute("src", imgSrc)
+        show.classList.replace("d-none", "d-block")
+        nextIcon.classList.remove("d-none");
+        prevIcon.classList.remove("d-none");
+        // console.log(imgArry[i])
+        // console.log(i)
+    });
+}
 
 
 
