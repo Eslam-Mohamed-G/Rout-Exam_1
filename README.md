@@ -10,3 +10,14 @@
     <img src="./imgs/preview_2.png"></img>
   </kbd>
 </p>
+
+---
+
+## Video Demo
+
+Watch the video demonstration here:
+[Demo Video Link](https://youtu.be/kDEBKJi-Sqk) <!-- Replace with actual link -->
+
+
+
+
